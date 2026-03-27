@@ -293,3 +293,11 @@ if (!isInGHA) {
         }
     }
 }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
